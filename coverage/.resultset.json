@@ -5,8 +5,7 @@
         1,
         1,
         1,
-        null,
-        1,
+        0,
         0,
         0,
         null,
@@ -16,15 +15,17 @@
         1,
         null,
         1,
-        null,
-        null
-      ],
-      "/Users/CEO/Documents/Coding/MakersAcademy/Projects/Week4/Day1/lib/link.rb": [
         1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null,
         null
       ]
     },
-    "timestamp": 1520869298
+    "timestamp": 1520872510
   }
 }
