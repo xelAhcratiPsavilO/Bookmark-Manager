@@ -7,7 +7,8 @@ So that I can access different websites,
 I want to see a list of links
 ```
 
-##Domain Model
+## Domain Model
+
 |Objects | Messages |
 |--------|----------|
 |user||
