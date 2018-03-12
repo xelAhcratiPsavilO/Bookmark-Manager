@@ -1,14 +1,30 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/CEO/Documents/Coding/MakersAcademy/Projects/Week4/Day1/spec/features/see_list_of_spec.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null
+      ],
       "/Users/CEO/Documents/Coding/MakersAcademy/Projects/Week4/Day1/spec/link_spec.rb": [
         1,
         null,
-        0,
+        1,
+        null,
+        null
+      ],
+      "/Users/CEO/Documents/Coding/MakersAcademy/Projects/Week4/Day1/lib/link.rb": [
+        1,
         null,
         null
       ]
     },
-    "timestamp": 1520868701
+    "timestamp": 1520869298
   }
 }
