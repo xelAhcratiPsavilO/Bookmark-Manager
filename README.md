@@ -27,7 +27,7 @@ User <--- list_links ---> links
 |Objects | Messages |
 |--------|----------|
 |BookmarkManager|add_site_address|
-|---------------|add_site_title|
+||add_site_title|
 
 ```
 BookmarkManager ---> add_site_address

@@ -4,7 +4,7 @@ class Link
     [
       "http://www.makersacademy.com",
       "http://www.google.com",
-      "http://www.facebook.com"      
+      "http://www.facebook.com"
     ]
   end
 end

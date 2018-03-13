@@ -1,3 +1,3 @@
-require "./lib/app.rb"
+require_relative './app'
 
 run BookmarkManager
