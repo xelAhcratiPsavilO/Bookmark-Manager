@@ -1,4 +1,5 @@
 ENV['RACK_ENV'] = 'test'
+ENV['ENVIRONMENT'] = 'test'
 
 require 'capybara'
 require 'capybara/rspec'
@@ -16,6 +17,10 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
 SimpleCov.start
 
 RSpec.configure do |config|
+
+  config.before(:each) do
+    require 'test_database_setup'
+  end
 
   config.expect_with :rspec do |expectations|
 

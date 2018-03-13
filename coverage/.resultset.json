@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/CEO/Documents/Coding/MakersAcademy/Projects/Week4/Day1/spec/features/see_list_of_spec.rb": [
+      "/Users/vivianallen/projects/makers-course/Bookmark-Manager/temp/Bookmark-Manager/spec/features/see_list_of_spec.rb": [
         1,
         1,
         1,
@@ -11,7 +11,7 @@
         null,
         null
       ],
-      "/Users/CEO/Documents/Coding/MakersAcademy/Projects/Week4/Day1/spec/link_spec.rb": [
+      "/Users/vivianallen/projects/makers-course/Bookmark-Manager/temp/Bookmark-Manager/spec/link_spec.rb": [
         1,
         null,
         1,
@@ -24,8 +24,18 @@
         null,
         null,
         null
+      ],
+      "/Users/vivianallen/projects/makers-course/Bookmark-Manager/temp/Bookmark-Manager/spec/test_database_setup.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1
       ]
     },
-    "timestamp": 1520943897
+    "timestamp": 1520954224
   }
 }
