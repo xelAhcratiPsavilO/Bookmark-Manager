@@ -3,7 +3,7 @@ require 'pg'
 class Link
 
   def self.all
-    if ENV['ENVIRONMENT'] = 'test'
+    if ENV['ENVIRONMENT'] == 'test'
       con = PG.connect :dbname => 'bookmark_manager_test'
     else
       con = PG.connect :dbname => 'bookmark_manager'
