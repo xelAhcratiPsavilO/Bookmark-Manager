@@ -15,6 +15,10 @@ describe Link do
       Link.create('http://www.bbc.co.uk')
       expect(Link.show_all).to include 'http://www.bbc.co.uk'
     end
+    it 'does not create a new link if the URL is not valid' do
+      Link.create('not a real link')
+      expect(Link.show_all).not_to include 'not a real link'
+    end
   end
 
 end

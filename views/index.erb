@@ -3,12 +3,13 @@
 <html>
   <body>
     <form action='/add_link' method='post'>
-      <label for='link_url'>
+      <label for='url'>
         Introduce a new link in your list:
-        <input type='text' name='link_url'>
+        <input type='text' name='url'>
         <button type='submit'>Add link</button>
       </label>
     </form>
+    <%= flash[:notice] %>
     <ul>
       <% @links.each do |link| %>
         <li><%= link %></li>
