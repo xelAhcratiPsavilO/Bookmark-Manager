@@ -1,14 +1,12 @@
-require 'pg'
+require_relative './DB_connection_setup.rb'
 
 class Link
 
-  def self.all
-    if ENV['ENVIRONMENT'] == 'test'
-      con = PG.connect :dbname => 'bookmark_manager_test'
-    else
-      con = PG.connect :dbname => 'bookmark_manager'
-    end
-    rs =  con.exec "SELECT * FROM links"
+  def self.show_all
+    rs = DatabaseConnection.query('SELECT * FROM links')
     rs.map { |link| link['url'] }
+  end
+  def self.create(url)
+    DatabaseConnection.query("INSERT INTO links (url) VALUES ('#{url}')")
   end
 end
