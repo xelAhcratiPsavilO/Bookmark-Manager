@@ -9,4 +9,12 @@ describe Link do
       expect(links).to include "http://www.facebook.com"
     end
   end
+
+  describe '.create' do
+    it 'creates a link' do
+      Link.create('http://www.bbc.co.uk')
+      expect(Link.show_all).to include 'http://www.bbc.co.uk'
+    end
+  end
+
 end
