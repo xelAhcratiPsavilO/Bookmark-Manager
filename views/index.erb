@@ -6,13 +6,18 @@
       <label for='url'>
         Introduce a new link in your list:
         <input type='text' name='url'>
+        <input type='text' name='title'>
         <button type='submit'>Add link</button>
       </label>
     </form>
     <%= flash[:notice] %>
     <ul>
       <% @links.each do |link| %>
-        <li><%= link %></li>
+        <li id="link-<%= link.id %>">
+          <a href="<%= link.url%>" target="_blank">
+            <%= link.title %>
+          </a>
+        </li>
       <% end %>
     </ul>
   </body>
