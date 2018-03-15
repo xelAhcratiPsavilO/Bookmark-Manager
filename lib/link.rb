@@ -16,7 +16,12 @@ class Link
 
   def self.create(input)
     return false unless is_url?(input[:url])
-    DatabaseConnection.query("INSERT INTO links (url, title) VALUES('#{input[:url]}', '#{input[:title]}')")
+    res = DatabaseConnection.query("INSERT INTO links (url, title) VALUES('#{input[:url]}', '#{input[:title]}')RETURNING id, url, title")
+    Link.new(res[0]['id'], res[0]['url'], res[0]['title'])
+  end
+
+  def self.delete(name)
+    DatabaseConnection.query("DELETE FROM links WHERE title = '#{name}'")
   end
 
   private
